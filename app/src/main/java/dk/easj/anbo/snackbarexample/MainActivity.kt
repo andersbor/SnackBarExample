@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             binding.messageTextView.text = ""
             // https://www.tutorialkart.com/kotlin-android/android-snackbar-example/
             val snack = Snackbar.make(it, "This is a simple Snackbar", Snackbar.LENGTH_LONG)
-            snack.setAction("Undo", { binding.messageTextView.text = "Undone ..." })
+            snack.setAction("Undo") { binding.messageTextView.text = "Undone ..." }
             snack.show()
         }
     }
